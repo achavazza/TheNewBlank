@@ -15,7 +15,7 @@
 	<?php //include (TEMPLATEPATH . '/inc/nav.php' ); ?>
 
 	<?php else : ?>
-		<h2>No encontramos ninguna noticia :(</h2>
+		<h2>No encontramos ninguna Noticia :(</h2>
 	<?php endif; ?>
 
 <?php get_sidebar(); ?>
