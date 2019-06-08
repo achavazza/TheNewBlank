@@ -1,0 +1,154 @@
+// Table of Contents
+// ======================================================================================================
+// #Buttons       - basic styling
+// #Button-styles - style variations
+
+// #Button
+// ======================================================================================================
+
+.btn {
+    
+    // Structure
+    display: inline-block;
+    zoom: 1;
+
+    font-family: inherit;
+    font-size: 100%;
+    line-height: normal;
+    white-space: nowrap;
+    vertical-align: baseline;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    
+    .user-select();
+
+    *display: inline;   // IE 6/7
+    *font-size: 90%;    // IE 6/7 - To reduce IE's oversized button text
+    *overflow: visible; // IE 6/7 - Because of IE's overly large left/right padding on buttons 
+
+
+    // Style
+    padding: @btnPadding;
+    //color: #333;
+    border: 1px solid #B7B7B7;
+    border-color: rgba(0, 0, 0, .1) 
+                  rgba(0, 0, 0, .1) 
+                  rgba(0, 0, 0, .25);
+
+    border-radius: 3px;
+    //text-shadow: 0 1px 0 rgba(255,255,255,.5);
+    .gradient(lighten(@brandDefault ,5%),darken(@brandDefault ,5%));
+    .contrast(@brandDefault);
+
+    &-hover,
+    &:hover,
+    &:focus{
+        background-image: none;
+    }
+
+    &:focus {
+        outline: 0;
+    }
+
+    &-active ,
+    &:active {
+        background-image: none;
+        box-shadow: 0 0 0 1px rgba(0,0,0, 0.15) inset,
+                    0 0   6px rgba(0,0,0, 0.20) inset;
+    }
+
+    &[disabled],
+    &-disabled{
+
+        border: none;
+        background-image: none;
+        opacity: 0.40;
+        cursor: not-allowed;
+        box-shadow: none;    
+
+        &:hover,
+        &:focus,
+        &:active {
+            &:extend(.btn-disabled);
+        }
+    }
+
+    &-hidden {
+        display: none;
+    }
+
+    &-full { width: 100%; }
+}
+
+
+.form{
+    input[type="image"],
+    input[type="reset"],
+    input[type="submit"]{
+        &:extend(.btn);
+    }
+}
+
+// #Button-styles
+// ======================================================================================================
+.btn{
+    &-default { .gradient(lighten(@brandDefault,5%),darken(@brandDefault,5%)); .contrast(darken(@brandDefault, 5%))}
+
+    &-error,
+    &-danger  { .gradient(lighten(@brandDanger ,5%),darken(@brandDanger ,5%)); .contrast(darken(@brandDanger , 5%))}
+    &-warning { .gradient(lighten(@brandWarning,5%),darken(@brandWarning,5%)); .contrast(darken(@brandWarning, 5%))}
+    &-info    { .gradient(lighten(@brandInfo   ,5%),darken(@brandInfo   ,5%)); .contrast(darken(@brandInfo   , 5%))}
+    &-success { .gradient(lighten(@brandSuccess,5%),darken(@brandSuccess,5%)); .contrast(darken(@brandSuccess, 5%))}
+    &-primary { .gradient(lighten(@brandPrimary,5%),darken(@brandPrimary,5%)); .contrast(darken(@brandPrimary, 5%))}
+    &-alt     { .gradient(lighten(@brandAlt    ,5%),darken(@brandAlt    ,5%)); .contrast(darken(@brandAlt    , 5%))}
+    &-inverse { .gradient(lighten(@brandInverse,5%),darken(@brandInverse,5%)); .contrast(darken(@brandInverse, 5%))}
+    &-link,
+    &-link:hover,
+    &-link:active { 
+        padding: 0;
+        background: none;
+        border: 0 none;
+        box-shadow: 0 0 transparent;
+        color: @linkFontColor;
+    }
+    &-link{
+        &:hover{
+            text-decoration: underline;
+        }
+        &:focus{
+            box-shadow: 0 0 0 transparent;
+            //text-decoration: underline;
+        }
+    }
+    &-hollow{
+        color: inherit;
+        border-color: currentColor;
+        //border-color: inherit;
+        background-image: none;
+        background-color: transparent;
+        text-shadow: 0 0 transparent;
+    }
+}
+
+.btn-group{
+    display: table !important;
+    > * {
+        display: table-cell !important;
+        margin: 0;
+        border-radius: 0 !important;
+        vertical-align: baseline !important;
+    }
+    :first-child{
+        border-top-left-radius: @inputRadius !important;
+        border-bottom-left-radius: @inputRadius !important;
+    }
+    :last-child{
+        border-top-right-radius: @inputRadius !important;
+        border-bottom-right-radius: @inputRadius !important;
+    }
+    .btn,
+    .label{
+        vertical-align: middle;
+    }
+}

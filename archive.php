@@ -19,7 +19,7 @@
 			} elseif (isset($_GET['paged']) && !empty($_GET['paged'])) { // If this is a paged archive
 				echo ('<h2>Blog</h2>');
 			} ?>
-			<?php /* 
+			<?php /*
  			<?php $post = $posts[0]; // Hack. Set $post so that the_date() works. ?>
 
 			<?php If this is a category archive  if (is_category()) { ?>
@@ -42,18 +42,18 @@
 
 			<?php If this is a paged archive  } elseif (isset($_GET['paged']) && !empty($_GET['paged'])) { ?>
 				<h2 class="pagetitle">Blog Archives</h2>
-			
+
 			<?php } ?>
 			*/ ?>
 
 			<?php include (TEMPLATEPATH . '/inc/nav.php' ); ?>
 
 			<?php while (have_posts()) : the_post(); ?>
-			
+
 				<div <?php post_class() ?>>
-				
+
 						<h2 id="post-<?php the_ID(); ?>"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
-					
+
 						<?php include (TEMPLATEPATH . '/inc/meta.php' ); ?>
 
 						<div class="entry">
@@ -65,7 +65,7 @@
 			<?php endwhile; ?>
 
 			<?php include (TEMPLATEPATH . '/inc/nav.php' ); ?>
-			
+
 	<?php else : ?>
 
 		<h2>Nothing found</h2>

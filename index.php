@@ -11,7 +11,7 @@
 		</div>
 
 	<?php endwhile; ?>
-	
+
 	<?php //include (TEMPLATEPATH . '/inc/nav.php' ); ?>
 
 	<?php else : ?>
