@@ -102,6 +102,5 @@ function cmb2_slides() {
         'select_type'     => 'radio', // Default is 'checkbox', used in the modal view to select the post type
         'select_behavior' => 'replace', // Will replace any selection with selection from modal. Default is 'add'
     ) );
-
 }
  ?>

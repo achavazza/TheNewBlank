@@ -1,8 +1,6 @@
 # Copyright (C) 2016 WebDevStudios
 # This file is distributed under the same license as the CMB2 package.
 # Translators:
-# Thomas De Jonghe <thomas@teedejee.be>, 2015
-# Tibor Paulsch <4tibor@gmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: CMB2\n"
@@ -10,11 +8,11 @@ msgstr ""
 "POT-Creation-Date: 2016-06-27 17:01:22+00:00\n"
 "PO-Revision-Date: 2016-06-27 17:01+0000\n"
 "Last-Translator: Justin Sternberg <me@jtsternberg.com>\n"
-"Language-Team: Dutch (Netherlands) (http://www.transifex.com/wp-translations/cmb2/language/nl_NL/)\n"
+"Language-Team: Norwegian Nynorsk (Norway) (http://www.transifex.com/wp-translations/cmb2/language/nn_NO/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: nl_NL\n"
+"Language: nn_NO\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: grunt-wp-i18n 0.4.9\n"
 "X-Poedit-Basepath: ../\n"
@@ -27,11 +25,11 @@ msgstr ""
 
 #: example-functions.php:117 tests/test-cmb-field.php:255
 msgid "Test Metabox"
-msgstr "Test Metabox"
+msgstr ""
 
 #: example-functions.php:130 example-functions.php:436
 msgid "Test Text"
-msgstr "Test Tekst"
+msgstr ""
 
 #: example-functions.php:131 example-functions.php:144
 #: example-functions.php:157 example-functions.php:165
@@ -53,11 +51,11 @@ msgstr "Test Tekst"
 #: example-functions.php:613 example-functions.php:650
 #: tests/test-cmb-field.php:267
 msgid "field description (optional)"
-msgstr "Veldomschrijving (optioneel)"
+msgstr ""
 
 #: example-functions.php:143
 msgid "Test Text Small"
-msgstr "Test Tekst Klein"
+msgstr ""
 
 #: example-functions.php:156
 msgid "Test Text Medium"
@@ -77,19 +75,19 @@ msgstr ""
 
 #: example-functions.php:189
 msgid "Test Time"
-msgstr "Test Tijd"
+msgstr ""
 
 #: example-functions.php:197 example-functions.php:198
 msgid "Time zone"
-msgstr "Tijdzone"
+msgstr ""
 
 #: example-functions.php:204
 msgid "Test Date Picker"
-msgstr "Test Datumprikker"
+msgstr ""
 
 #: example-functions.php:212
 msgid "Test Date Picker (UNIX timestamp)"
-msgstr "Test Datumprikker (UNIX timestamp)"
+msgstr ""
 
 #: example-functions.php:220
 msgid "Test Date/Time Picker Combo (UNIX timestamp)"
@@ -97,11 +95,11 @@ msgstr ""
 
 #: example-functions.php:237
 msgid "Test Money"
-msgstr "Test Geld"
+msgstr ""
 
 #: example-functions.php:246
 msgid "Test Color Picker"
-msgstr "Test Kleurenkiezer"
+msgstr ""
 
 #: example-functions.php:259
 msgid "Test Text Area"
@@ -130,17 +128,17 @@ msgstr ""
 #: example-functions.php:293 example-functions.php:306
 #: example-functions.php:318
 msgid "Option One"
-msgstr "Keuze Een"
+msgstr ""
 
 #: example-functions.php:294 example-functions.php:307
 #: example-functions.php:319
 msgid "Option Two"
-msgstr "Keuze Twee"
+msgstr ""
 
 #: example-functions.php:295 example-functions.php:308
 #: example-functions.php:320
 msgid "Option Three"
-msgstr "Keuze Drie"
+msgstr ""
 
 #: example-functions.php:300
 msgid "Test Radio inline"
@@ -188,15 +186,15 @@ msgstr ""
 
 #: example-functions.php:380
 msgid "Test Image"
-msgstr "Test Afbeelding"
+msgstr ""
 
 #: example-functions.php:381
 msgid "Upload an image or enter a URL."
-msgstr "Upload een afbeelding of voer een URL in."
+msgstr ""
 
 #: example-functions.php:387
 msgid "Multiple Files"
-msgstr "Meerdere Bestanden"
+msgstr ""
 
 #: example-functions.php:388
 msgid "Upload or add multiple images/attachments."
@@ -204,7 +202,7 @@ msgstr ""
 
 #: example-functions.php:395
 msgid "oEmbed"
-msgstr "oEmbed"
+msgstr ""
 
 #: example-functions.php:396
 msgid ""
@@ -242,7 +240,7 @@ msgstr ""
 
 #: example-functions.php:488
 msgid "Description"
-msgstr "Omschrijving"
+msgstr "Skildring"
 
 #: example-functions.php:489
 msgid "Write a short description for this entry"
@@ -254,39 +252,39 @@ msgstr ""
 
 #: example-functions.php:501
 msgid "Image Caption"
-msgstr "Onderschrift"
+msgstr "Undertittel på bilete"
 
 #: example-functions.php:520
 msgid "User Profile Metabox"
-msgstr "Gebruikersprofiel Metabox"
+msgstr ""
 
 #: example-functions.php:527 example-functions.php:597
 msgid "Extra Info"
-msgstr "Extra Info"
+msgstr ""
 
 #: example-functions.php:535
 msgid "Avatar"
-msgstr "Avatar"
+msgstr ""
 
 #: example-functions.php:542
 msgid "Facebook URL"
-msgstr "Facebook URL"
+msgstr ""
 
 #: example-functions.php:549
 msgid "Twitter URL"
-msgstr "Twitter URL"
+msgstr ""
 
 #: example-functions.php:556
 msgid "Google+ URL"
-msgstr "Google+ URL"
+msgstr ""
 
 #: example-functions.php:563
 msgid "Linkedin URL"
-msgstr "Linkedin URL"
+msgstr ""
 
 #: example-functions.php:570
 msgid "User Field"
-msgstr "Gebruiker Veld"
+msgstr ""
 
 #: example-functions.php:590
 msgid "Category Metabox"
@@ -302,11 +300,11 @@ msgstr ""
 
 #: example-functions.php:634
 msgid "Theme Options Metabox"
-msgstr "Thema instellingen Metabox"
+msgstr ""
 
 #: example-functions.php:649
 msgid "Site Background Color"
-msgstr "Achtergrondkleur Site"
+msgstr ""
 
 #: includes/CMB2.php:129
 msgid "Metabox configuration is required to have an ID parameter"
@@ -314,15 +312,15 @@ msgstr ""
 
 #: includes/CMB2.php:418
 msgid "Click to toggle"
-msgstr "Klik om te wisselen"
+msgstr "Klikk for å veksle"
 
 #: includes/CMB2_Ajax.php:71
 msgid "Please Try Again"
-msgstr "Opnieuw proberen."
+msgstr ""
 
 #: includes/CMB2_Ajax.php:173 tests/cmb-tests-base.php:59
 msgid "Remove Embed"
-msgstr "Verwijder Embed"
+msgstr ""
 
 #: includes/CMB2_Ajax.php:177 tests/cmb-tests-base.php:64
 msgid "No oEmbed Results Found for %s. View more info at"
@@ -330,16 +328,16 @@ msgstr ""
 
 #: includes/CMB2_Field.php:1186
 msgid "Add Group"
-msgstr "Voeg Groep Toe"
+msgstr ""
 
 #: includes/CMB2_Field.php:1187
 msgid "Remove Group"
-msgstr "Verwijder Groep"
+msgstr ""
 
 #: includes/CMB2_Field.php:1209 includes/CMB2_Field.php:1213
 #: tests/test-cmb-field.php:229
 msgid "None"
-msgstr "Geen"
+msgstr "Ingen"
 
 #: includes/CMB2_Field.php:1269
 msgid "Sorry, this field does not have a cmb_id specified."
@@ -349,61 +347,61 @@ msgstr ""
 #: includes/types/CMB2_Type_File_Base.php:75 tests/test-cmb-types-base.php:143
 #: tests/test-cmb-types.php:701
 msgid "File:"
-msgstr "Bestand:"
+msgstr ""
 
 #: includes/CMB2_JS.php:86 includes/CMB2_JS.php:119
 msgid "Clear"
-msgstr "Wissen"
+msgstr "Tøm"
 
 #: includes/CMB2_JS.php:87
 msgid "Default"
-msgstr "Standaard"
+msgstr "Standardval"
 
 #: includes/CMB2_JS.php:88
 msgid "Select Color"
-msgstr "Kleur selecteren"
+msgstr "Vel farge"
 
 #: includes/CMB2_JS.php:89
 msgid "Current Color"
-msgstr "Huidige kleur"
+msgstr "Farga no"
 
 #: includes/CMB2_JS.php:110
 msgid "Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday"
-msgstr "Zondag, Maandag, Dinsdag, Woensdag, Donderdag, Vrijdag, Zaterdag, Zondag"
+msgstr ""
 
 #: includes/CMB2_JS.php:111
 msgid "Su, Mo, Tu, We, Th, Fr, Sa"
-msgstr "Zo, Ma, Di, Wo, Do, Vr, Za"
+msgstr ""
 
 #: includes/CMB2_JS.php:112
 msgid "Sun, Mon, Tue, Wed, Thu, Fri, Sat"
-msgstr "Zon, Maa, Din, Woe, Don, Vri, Zat"
+msgstr ""
 
 #: includes/CMB2_JS.php:113
 msgid ""
 "January, February, March, April, May, June, July, August, September, "
 "October, November, December"
-msgstr "Januari, Februari, Maart, April, Mei, Juni, Juli, Augustus, September, Oktober, November, December"
+msgstr ""
 
 #: includes/CMB2_JS.php:114
 msgid "Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec"
-msgstr "Jan, Feb, Maa, Apr, Mei, Jun, Jul, Aug, Sep, Okt, Nov, Dec"
+msgstr ""
 
 #: includes/CMB2_JS.php:115
 msgid "Next"
-msgstr "Volgende"
+msgstr "Neste"
 
 #: includes/CMB2_JS.php:116
 msgid "Prev"
-msgstr "Vorige"
+msgstr "Førre"
 
 #: includes/CMB2_JS.php:117
 msgid "Today"
-msgstr "Vandaag"
+msgstr "I dag"
 
 #: includes/CMB2_JS.php:118 includes/CMB2_JS.php:128
 msgid "Done"
-msgstr "Klaar"
+msgstr "Ferdig"
 
 #: includes/CMB2_JS.php:122
 msgid "Choose Time"
@@ -411,15 +409,15 @@ msgstr ""
 
 #: includes/CMB2_JS.php:123
 msgid "Time"
-msgstr "Tijd"
+msgstr ""
 
 #: includes/CMB2_JS.php:124
 msgid "Hour"
-msgstr "Uur"
+msgstr ""
 
 #: includes/CMB2_JS.php:125
 msgid "Minute"
-msgstr "Minuut"
+msgstr ""
 
 #: includes/CMB2_JS.php:126
 msgid "Second"
@@ -431,7 +429,7 @@ msgstr ""
 
 #: includes/CMB2_JS.php:135
 msgid "Use this file"
-msgstr "Gebruik dit bestand"
+msgstr ""
 
 #: includes/CMB2_JS.php:136
 msgid "Use these files"
@@ -439,27 +437,27 @@ msgstr ""
 
 #: includes/CMB2_JS.php:137 includes/types/CMB2_Type_File_Base.php:61
 msgid "Remove Image"
-msgstr "Afbeelding verwijderen"
+msgstr "Fjern biletet"
 
 #: includes/CMB2_JS.php:138 includes/CMB2_Types.php:257
 #: includes/types/CMB2_Type_File_Base.php:80 tests/test-cmb-types-base.php:143
 #: tests/test-cmb-types.php:47 tests/test-cmb-types.php:55
 #: tests/test-cmb-types.php:701
 msgid "Remove"
-msgstr "Verwijderen"
+msgstr "Fjern"
 
 #: includes/CMB2_JS.php:140 includes/types/CMB2_Type_File_Base.php:78
 #: tests/test-cmb-types-base.php:143 tests/test-cmb-types.php:701
 msgid "Download"
-msgstr "Downloaden"
+msgstr ""
 
 #: includes/CMB2_JS.php:141
 msgid "Select / Deselect All"
-msgstr "Alle selecteren / deselecteren"
+msgstr ""
 
 #: includes/CMB2_Types.php:194
 msgid "Add Row"
-msgstr "Voeg Rij Toe"
+msgstr ""
 
 #: includes/CMB2_hookup.php:145
 msgid ""
@@ -477,7 +475,7 @@ msgstr ""
 
 #: includes/helper-functions.php:279
 msgid "Save"
-msgstr "Opslaan"
+msgstr "Lagre"
 
 #: includes/types/CMB2_Type_File.php:36 tests/test-cmb-types.php:683
 #: tests/test-cmb-types.php:701
@@ -492,7 +490,7 @@ msgstr ""
 #: includes/types/CMB2_Type_Taxonomy_Multicheck.php:27
 #: includes/types/CMB2_Type_Taxonomy_Radio.php:25
 msgid "No terms"
-msgstr "Geen termen"
+msgstr ""
 
 #. Plugin Name of the plugin/theme
 msgid "CMB2"
@@ -519,7 +517,7 @@ msgstr ""
 #: includes/CMB2_JS.php:109
 msgctxt "Valid formatDate string for jquery-ui datepicker"
 msgid "mm/dd/yy"
-msgstr "mm/dd/jj"
+msgstr ""
 
 #: includes/CMB2_JS.php:129
 msgctxt ""

@@ -1039,21 +1039,32 @@ class CMB2_Field extends CMB2_Base {
 	}
 
 	/**
-	 * Retrieve options args. Calls options_cb if it exists.
+	 * Retrieve options args.
 	 *
 	 * @since  2.0.0
 	 * @param  string $key Specific option to retrieve
 	 * @return array        Array of options
 	 */
 	public function options( $key = '' ) {
-		if ( ! empty( $this->field_options ) ) {
-			if ( $key ) {
-				return array_key_exists( $key, $this->field_options ) ? $this->field_options[ $key ] : false;
-			}
-
-			return $this->field_options;
+		if ( empty( $this->field_options ) ) {
+			$this->set_options();
 		}
 
+		if ( $key ) {
+			return array_key_exists( $key, $this->field_options ) ? $this->field_options[ $key ] : false;
+		}
+
+		return $this->field_options;
+	}
+
+	/**
+	 * Generates/sets options args. Calls options_cb if it exists.
+	 *
+	 * @since  2.2.5
+	 *
+	 * @return array Array of options
+	 */
+	public function set_options() {
 		$this->field_options = (array) $this->args['options'];
 
 		if ( is_callable( $this->args['options_cb'] ) ) {
@@ -1062,10 +1073,6 @@ class CMB2_Field extends CMB2_Base {
 			if ( $options && is_array( $options ) ) {
 				$this->field_options = $options + $this->field_options;
 			}
-		}
-
-		if ( $key ) {
-			return array_key_exists( $key, $this->field_options ) ? $this->field_options[ $key ] : false;
 		}
 
 		return $this->field_options;
@@ -1093,17 +1100,17 @@ class CMB2_Field extends CMB2_Base {
 	 * @return mixed  Default field value
 	 */
 	public function get_default() {
-		if ( null !== $this->args['default'] ) {
-			return $this->args['default'];
+		$default = $this->args['default'];
+
+		if ( null !== $default ) {
+			return apply_filters( 'cmb2_default_filter', $default, $this );
 		}
 
 		$param = is_callable( $this->args['default_cb'] ) ? 'default_cb' : 'default';
-		$default = $this->get_param_callback_result( $param );
+		$default = $this->args['default'] = $this->get_param_callback_result( $param );
 
-		// Allow a filter override of the default value
-		$this->args['default'] = apply_filters( 'cmb2_default_filter', $default, $this );
-
-		return $this->args['default'];
+		// Allow a filter override of the default value.
+		return apply_filters( 'cmb2_default_filter', $this->args['default'], $this );
 	}
 
 	/**
@@ -1230,7 +1237,7 @@ class CMB2_Field extends CMB2_Base {
 	}
 
 	/**
-	 * Returns a cloned version of this field object with, but with
+	 * Returns a cloned version of this field object, but with
 	 * modified/overridden field arguments.
 	 *
 	 * @since  2.2.2

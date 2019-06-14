@@ -6,18 +6,20 @@ add_action('init', 'slide_init');
 
 function slide_init() {
     $labels = array(
-        'name'               => _x('Slides', 'post type general name'),
-        'singular_name'      => _x('Slide', 'post type singular name'),
-        'add_new'            => _x('Agregar Nuevo', 'slide'),
-        'add_new_item'       => __('Agregar Nuevo Slide'),
-        'edit_item'          => __('Editar slide'),
-        'new_item'           => __('Nuevo slide'),
-        'view_item'          => __('Ver slide'),
-        'search_items'       => __('Buscar slides'),
-        'not_found'          => __('No se encontraron slides'),
-        'not_found_in_trash' => __('No no se encontraron slides en la papelera'),
-        'parent_item_colon'  => '',
-        'menu_name'          => 'Slides'
+        'name'               => _x( 'Slides', 'post type general name', 'tnb' ),
+		'singular_name'      => _x( 'Slide', 'post type singular name', 'tnb' ),
+		'name_admin_bar'     => _x( 'Slide', 'add new on admin bar', 'tnb' ),
+		'add_new'            => _x( 'Agregar nuevo slide', 'slide', 'tnb' ),
+		'add_new_item'       => __( 'Agregar Nuevo Slide', 'tnb' ),
+		'new_item'           => __( 'Nuevo Slide', 'tnb' ),
+		'edit_item'          => __( 'Editar Slide', 'tnb' ),
+		'view_item'          => __( 'Ver Slide', 'tnb' ),
+		'all_items'          => __( 'Todos los Slides', 'tnb' ),
+		'search_items'       => __( 'Buscar Slides', 'tnb' ),
+		'parent_item_colon'  => __( 'Slides padre:', 'tnb' ),
+        'not_found'          => __('No se encontraron slides', 'tnb'),
+        'not_found_in_trash' => __('No se encontraron slides en la papelera', 'tnb'),
+        'menu_name'          => _x( 'Slides', 'admin menu', 'tnb' ),
     );
     $args = array(
         'labels'             => $labels,
@@ -32,10 +34,43 @@ function slide_init() {
         'hierarchical'       => false,
         'menu_position'      => 3,
         'menu_icon'          => 'dashicons-images-alt2',
-        'supports'           => array('title', 'excerpt', 'thumbnail'),
-        'taxonomies'         => array('slide-category', 'slide-tag')
+        'supports'           => array('title', 'thumbnail'),
+        'taxonomies'         => array('slider'),
     );
     register_post_type('slide', $args);
+
+
+    $labels_slider = array(
+		'name'                       => _x( 'Sliders', 'taxonomy general name', 'tnb' ),
+		'singular_name'              => _x( 'Slider', 'taxonomy singular name', 'tnb' ),
+		'search_items'               => __( 'Buscar Sliders', 'tnb' ),
+		'popular_items'              => __( 'Sliders mas usados', 'tnb' ),
+		'all_items'                  => __( 'Todos los sliders', 'tnb' ),
+        'parent_item'                => __( 'Slider Padre', 'tnb' ),
+        'parent_item_colon'          => __( 'Slider Padre:', 'tnb' ),
+		'edit_item'                  => __( 'Editar Slider', 'tnb' ),
+		'update_item'                => __( 'Actualizar Slider', 'tnb' ),
+		'add_new_item'               => __( 'Agregar Nuevo Slider', 'tnb' ),
+		'new_item_name'              => __( 'Nuevo Nombre', 'tnb' ),
+		'separate_items_with_commas' => __( 'Separar sliders con comas', 'tnb' ),
+		'add_or_remove_items'        => __( 'Agregar o quitar sliders', 'tnb' ),
+		'choose_from_most_used'      => __( 'Elija de los sliders mas usados', 'tnb' ),
+		'not_found'                  => __( 'No se encontraron sliders.', 'tnb' ),
+		'menu_name'                  => __( 'Sliders', 'tnb' ),
+	);
+
+	$args_slider = array(
+		'hierarchical'          => true,
+		'labels'                => $labels_slider,
+		'show_ui'               => true,
+		'show_admin_column'     => true,
+		'update_count_callback' => '_update_post_term_count',
+		'query_var'             => true,
+        'description'           => false,
+		'rewrite'               => array( 'slug' => 'slider' ),
+	);
+
+    register_taxonomy( 'slider', 'slide', $args_slider );
 }
 
 /* Update slide Messages */
@@ -75,4 +110,142 @@ add_action('contextual_help', 'slide_help_text', 10, 3);
     }
     return $contextual_help;
 }
+
+function slide_metabox() {
+	$prefix = 'slide_prop_';
+	/**
+	 * Metabox to add fields to categories and tags
+	 */
+	$cmb = new_cmb2_box( array(
+		'id'               => $prefix . 'info',
+		'title'            => __( 'Opciones de slide', 'tnb' ), // Doesn't output for term boxes
+		'object_types'     => array( 'slide' ), // Tells CMB2 to use term_meta vs post_meta
+		//'taxonomies'       => array( 'slider' ), // Tells CMB2 which taxonomies should have these fields
+        //'context'       => 'normal',
+        'priority'      => 'high',
+		//'new_term_section' => true, // Will display in the "Add New Category" section
+	) );
+    /*
+	$cmb->add_field( array(
+		'name' => __( 'Term Image', 'tnb' ),
+		'desc' => __( 'field description (optional)', 'tnb' ),
+		'id'   => $prefix . 'avatar',
+		'type' => 'file',
+	) );
+    */
+	$cmb->add_field( array(
+		'name'    => __( 'Encabezado', 'tnb' ),
+		'desc'    => __( 'Texto primario', 'tnb' ),
+		'id'      => $prefix . 'content',
+		'attributes' => array('cols'=>250, 'rows'=>5,'style'=>'width:100%'),
+		'type'    => 'textarea',
+	));
+	$cmb->add_field( array(
+		'name'    => __( ' Position', 'tinb' ),
+	    'id'      => $prefix . 'buttonset',
+	    'type'    => 'buttonset',
+	    'options' => array(
+            "" => __("Default", 'tnb'),
+            "left" => __("Left", 'tnb'),
+            "center" => __("Center", 'tnb'),
+            "right" => __("Right", 'tnb')
+	    ),
+	    'default' => 'none'
+    ));
+	$cmb->add_field( array(
+		'name'    => __( 'Leyenda', 'tnb' ),
+		'desc'    => __( 'Texto secundario', 'tnb' ),
+		'id'      => $prefix . 'legend',
+		'attributes' => array('cols'=>250, 'rows'=>5,'style'=>'width:100%'),
+		'type'    => 'textarea',
+	));
+	$cmb->add_field( array(
+		'name'    => __( 'Botón #1', 'tnb' ),
+		//'desc'    => __( 'Texto secundario', 'tnb' ),
+		'id'      => $prefix . 'button-1',
+		//'attributes' => array('cols'=>120, 'rows'=>5),
+        /*
+        'attributes' => [
+            'disabled' => true,
+            'data-codeeditor' => json_encode( [
+                'codemirror' => [
+                    //'readOnly' => 'nocursor',
+                ],
+            ] ),
+        ],
+        */
+		'type'    => 'textarea_code',
+	));
+	$cmb->add_field( array(
+		'name'    => __( 'Botón #2', 'tnb' ),
+		//'desc'    => __( 'Texto secundario', 'tnb' ),
+		'id'      => $prefix . 'button-2',
+		'attributes' => array('cols'=>120, 'rows'=>5),
+		'type'    => 'textarea_code',
+	));
+
+    //if(!is_admin()){ return; }
+    /*
+    $cmb2Grid = new \Cmb2Grid\Grid\Cmb2Grid($cmb);
+    $row = $cmb2Grid->addRow();
+    $row->addColumns(array($f1, $f2));
+    $row->addColumns(array(
+        array($field1, 'class' => 'col-md-8'),
+        array($field2, 'class' => 'col-md-4')
+    ));
+    */
+
+}
+add_action( 'cmb2_admin_init', 'slide_metabox' );
+
+function slider_taxonomy_metabox() {
+	$prefix = 'slider_term_';
+	/**
+	 * Metabox to add fields to categories and tags
+	 */
+	$cmb_term = new_cmb2_box( array(
+		'id'               => $prefix . 'info',
+		'title'            => __( 'Propiedades slider', 'tnb' ), // Doesn't output for term boxes
+		'object_types'     => array( 'term' ), // Tells CMB2 to use term_meta vs post_meta
+		'taxonomies'       => array( 'slider' ), // Tells CMB2 which taxonomies should have these fields
+        'context'       => 'normal',
+        'priority'      => 'high',
+		//'new_term_section' => true, // Will display in the "Add New Category" section
+	) );
+    /*
+	$cmb_term->add_field( array(
+		'name' => __( 'Term Image', 'tnb' ),
+		'desc' => __( 'field description (optional)', 'tnb' ),
+		'id'   => $prefix . 'avatar',
+		'type' => 'file',
+	) );
+    */
+	$f1 = $cmb_term->add_field( array(
+		'name'    => __( 'Ancho', 'tnb' ),
+		'desc'    => __( 'Ancho del slider', 'tnb' ),
+		'default' => __( '100%', 'tnb' ),
+		'id'      => $prefix . 'w',
+		'type'    => 'text',
+	) );
+    $f2 = $cmb_term->add_field( array(
+		'name'    => __( 'Alto', 'tnb' ),
+		'desc'    => __( 'Alto del slider', 'tnb' ),
+		'default' => __( '400', 'tnb' ),
+		'id'      => $prefix . 'h',
+		'type'    => 'text',
+	) );
+
+    //if(!is_admin()){ return; }
+    $cmb2Grid = new \Cmb2Grid\Grid\Cmb2Grid($cmb_term);
+    $row = $cmb2Grid->addRow();
+    $row->addColumns(array($f1, $f2));
+    /*
+    $row->addColumns(array(
+        array($field1, 'class' => 'col-md-8'),
+        array($field2, 'class' => 'col-md-4')
+    ));
+    */
+}
+add_action( 'cmb2_admin_init', 'slider_taxonomy_metabox' );
+
 ?>

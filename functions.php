@@ -73,29 +73,37 @@
      * ========================================================================================================
      */
 
-    $base_path    = str_replace('\\', '/', dirname( __FILE__ ) ."/inc/cmb2");
-    $plugins_path = str_replace('\\', '/', dirname( __FILE__ ) ."/inc/cmb2-plugins");
+    $base_path    = str_replace('\\', '/', dirname( __FILE__ ) ."/inc/CMB2-develop");
+    //$base_path    = str_replace('\\', '/', dirname( __FILE__ ) ."/inc/cmb2");
+    $plugins_path = str_replace('\\', '/', dirname( __FILE__ ) ."/inc/CMB2-plugins");
 
     define("CMB_PATH", $base_path);
     define("CMB_PLUGINS", $plugins_path);
 
     if ( file_exists(  CMB_PATH . '/init.php' ) ) {
 
-        require_once  CMB_PATH . '/init.php';
+        require_once (CMB_PATH . '/init.php');
+
+        //grid
+        require_once (CMB_PLUGINS . '/CMB2-grid-master/Cmb2GridPlugin.php');
+
         //custom show_on
-        //include(CMB_PLUGINS . '/cmb-show-on/show_on.php');
+        //include(CMB_PLUGINS . '/CMB2-show-on/show_on.php');
 
         //custom post search field
-        //include(CMB_PLUGINS . '/cmb-post-search-field/cmb2_post_search_field.php');
+        //include(CMB_PLUGINS . '/CMB2-post-search-field/cmb2_post_search_field.php');
 
         //gallery plugin
-        //include(CMB_PLUGINS . '/cmb-field-gallery/cmb-field-gallery.php');
+        //include(CMB_PLUGINS . '/CMB2-field-gallery/cmb-field-gallery.php');
 
         //gallery plugin
-        //include(CMB_PLUGINS . '/cmb_field_map/cmb-field-map.php');
+        require_once (CMB_PLUGINS . '/CMB2_field_map/cmb-field-map.php');
 
         //MetaTabs
-        include(CMB_PLUGINS . '/cmb-metatabs-options/cmb2-metatabs-options.php');
+        require_once (CMB_PLUGINS . '/CMB2-metatabs-options/cmb2-metatabs-options.php');
+
+        //ButtonSet
+        require_once (CMB_PLUGINS . '/CMB2-Buttonset-Field-master/buttonset_metafield.php');
 
 
 
@@ -104,6 +112,9 @@
 
         //include('inc/post-types/internal.php');
     }
+
+    include('inc/post-types/slides.php');
+
     /*
      * Widgets
      * ========================================================================================================

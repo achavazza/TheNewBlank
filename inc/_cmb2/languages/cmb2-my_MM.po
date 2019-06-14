@@ -1,7 +1,6 @@
 # Copyright (C) 2016 WebDevStudios
 # This file is distributed under the same license as the CMB2 package.
 # Translators:
-# Syahril Zulkefli <syahzul@gmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: CMB2\n"
@@ -9,11 +8,11 @@ msgstr ""
 "POT-Creation-Date: 2016-06-27 17:01:22+00:00\n"
 "PO-Revision-Date: 2016-06-27 17:01+0000\n"
 "Last-Translator: Justin Sternberg <me@jtsternberg.com>\n"
-"Language-Team: Malay (Malaysia) (http://www.transifex.com/wp-translations/cmb2/language/ms_MY/)\n"
+"Language-Team: Burmese (Myanmar) (http://www.transifex.com/wp-translations/cmb2/language/my_MM/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ms_MY\n"
+"Language: my_MM\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: grunt-wp-i18n 0.4.9\n"
 "X-Poedit-Basepath: ../\n"
@@ -26,11 +25,11 @@ msgstr ""
 
 #: example-functions.php:117 tests/test-cmb-field.php:255
 msgid "Test Metabox"
-msgstr "Uji Metabox"
+msgstr ""
 
 #: example-functions.php:130 example-functions.php:436
 msgid "Test Text"
-msgstr "Uji Teks"
+msgstr ""
 
 #: example-functions.php:131 example-functions.php:144
 #: example-functions.php:157 example-functions.php:165
@@ -52,15 +51,15 @@ msgstr "Uji Teks"
 #: example-functions.php:613 example-functions.php:650
 #: tests/test-cmb-field.php:267
 msgid "field description (optional)"
-msgstr "penerangan bidang (pilihan)"
+msgstr ""
 
 #: example-functions.php:143
 msgid "Test Text Small"
-msgstr "Uji Teks Kecil"
+msgstr ""
 
 #: example-functions.php:156
 msgid "Test Text Medium"
-msgstr "Uji Teks Sederhana"
+msgstr ""
 
 #: example-functions.php:164
 msgid "Custom Rendered Field"
@@ -68,78 +67,78 @@ msgstr ""
 
 #: example-functions.php:172
 msgid "Website URL"
-msgstr "URL Laman Web"
+msgstr ""
 
 #: example-functions.php:181
 msgid "Test Text Email"
-msgstr "Uji Teks Emel"
+msgstr ""
 
 #: example-functions.php:189
 msgid "Test Time"
-msgstr "Masa Ujian"
+msgstr ""
 
 #: example-functions.php:197 example-functions.php:198
 msgid "Time zone"
-msgstr "Zon masa"
+msgstr ""
 
 #: example-functions.php:204
 msgid "Test Date Picker"
-msgstr "Uji Pilihan Tarikh"
+msgstr ""
 
 #: example-functions.php:212
 msgid "Test Date Picker (UNIX timestamp)"
-msgstr "Uji Pilihan Tarikh (tandawaktu UNIX)"
+msgstr ""
 
 #: example-functions.php:220
 msgid "Test Date/Time Picker Combo (UNIX timestamp)"
-msgstr "Uji Pilihan Kombo Tarikh/Masa (tandawaktu UNIX)"
+msgstr ""
 
 #: example-functions.php:237
 msgid "Test Money"
-msgstr "Uji Matawang"
+msgstr ""
 
 #: example-functions.php:246
 msgid "Test Color Picker"
-msgstr "Uji Pilihan Warna"
+msgstr ""
 
 #: example-functions.php:259
 msgid "Test Text Area"
-msgstr "Uji Ruang Teks"
+msgstr ""
 
 #: example-functions.php:266
 msgid "Test Text Area Small"
-msgstr "Uji Ruang Teks Kecil"
+msgstr ""
 
 #: example-functions.php:273
 msgid "Test Text Area for Code"
-msgstr "Uji Ruang Teks untuk Kod"
+msgstr ""
 
 #: example-functions.php:280
 msgid "Test Title Weeeee"
-msgstr "Uji Tajuk Weeeee"
+msgstr ""
 
 #: example-functions.php:281
 msgid "This is a title description"
-msgstr "Ini adalah penerangan tajuk"
+msgstr ""
 
 #: example-functions.php:287
 msgid "Test Select"
-msgstr "Uji Pilihan"
+msgstr ""
 
 #: example-functions.php:293 example-functions.php:306
 #: example-functions.php:318
 msgid "Option One"
-msgstr "Pilihan Satu"
+msgstr ""
 
 #: example-functions.php:294 example-functions.php:307
 #: example-functions.php:319
 msgid "Option Two"
-msgstr "Pilihan Dua"
+msgstr ""
 
 #: example-functions.php:295 example-functions.php:308
 #: example-functions.php:320
 msgid "Option Three"
-msgstr "Pilihan Tiga"
+msgstr ""
 
 #: example-functions.php:300
 msgid "Test Radio inline"
@@ -195,7 +194,7 @@ msgstr ""
 
 #: example-functions.php:387
 msgid "Multiple Files"
-msgstr "Berbilang Fail"
+msgstr ""
 
 #: example-functions.php:388
 msgid "Upload or add multiple images/attachments."
@@ -203,7 +202,7 @@ msgstr ""
 
 #: example-functions.php:395
 msgid "oEmbed"
-msgstr "oEmbed"
+msgstr ""
 
 #: example-functions.php:396
 msgid ""
@@ -213,79 +212,79 @@ msgstr ""
 
 #: example-functions.php:427
 msgid "About Page Metabox"
-msgstr "Halaman Mengenai Metabox"
+msgstr ""
 
 #: example-functions.php:456
 msgid "Repeating Field Group"
-msgstr "Kumpulan Bidang Berulang"
+msgstr ""
 
 #: example-functions.php:464
 msgid "Generates reusable form entries"
-msgstr "Jana bidang untuk entri yang boleh diguna semula"
+msgstr ""
 
 #: example-functions.php:466
 msgid "Entry {#}"
-msgstr "Entri {#}"
+msgstr ""
 
 #: example-functions.php:467
 msgid "Add Another Entry"
-msgstr "Tambah Kemasukan Baru"
+msgstr ""
 
 #: example-functions.php:468
 msgid "Remove Entry"
-msgstr "Buang Kemasukan"
+msgstr ""
 
 #: example-functions.php:481
 msgid "Entry Title"
-msgstr "Tajuk Kemasukan"
+msgstr ""
 
 #: example-functions.php:488
 msgid "Description"
-msgstr "Deskripsi"
+msgstr "ေဖာ်ြပချက်"
 
 #: example-functions.php:489
 msgid "Write a short description for this entry"
-msgstr "Tulis penerangan ringkas tentang entri ini"
+msgstr ""
 
 #: example-functions.php:495
 msgid "Entry Image"
-msgstr "Imej Entri"
+msgstr ""
 
 #: example-functions.php:501
 msgid "Image Caption"
-msgstr "Sari Kata Imej"
+msgstr "ရုပ်​ပံု​အမည်"
 
 #: example-functions.php:520
 msgid "User Profile Metabox"
-msgstr "Metabox Profil Pengguna"
+msgstr ""
 
 #: example-functions.php:527 example-functions.php:597
 msgid "Extra Info"
-msgstr "Info Tambahan"
+msgstr ""
 
 #: example-functions.php:535
 msgid "Avatar"
-msgstr "Avatar"
+msgstr ""
 
 #: example-functions.php:542
 msgid "Facebook URL"
-msgstr "URL Facebook"
+msgstr ""
 
 #: example-functions.php:549
 msgid "Twitter URL"
-msgstr "URL Twitter"
+msgstr ""
 
 #: example-functions.php:556
 msgid "Google+ URL"
-msgstr "URL Google+"
+msgstr ""
 
 #: example-functions.php:563
 msgid "Linkedin URL"
-msgstr "URL LinkedIn"
+msgstr ""
 
 #: example-functions.php:570
 msgid "User Field"
-msgstr "Bidang Pengguna"
+msgstr ""
 
 #: example-functions.php:590
 msgid "Category Metabox"
@@ -313,7 +312,7 @@ msgstr ""
 
 #: includes/CMB2.php:418
 msgid "Click to toggle"
-msgstr "Klik untuk togol"
+msgstr "ဖွင့်/ပိတ်ရန် ကလစ် ​နှိပ်​ပါ​။"
 
 #: includes/CMB2_Ajax.php:71
 msgid "Please Try Again"
@@ -338,7 +337,7 @@ msgstr ""
 #: includes/CMB2_Field.php:1209 includes/CMB2_Field.php:1213
 #: tests/test-cmb-field.php:229
 msgid "None"
-msgstr "Tiada"
+msgstr "တစ်ခုမျှ မေရွး"
 
 #: includes/CMB2_Field.php:1269
 msgid "Sorry, this field does not have a cmb_id specified."
@@ -348,23 +347,23 @@ msgstr ""
 #: includes/types/CMB2_Type_File_Base.php:75 tests/test-cmb-types-base.php:143
 #: tests/test-cmb-types.php:701
 msgid "File:"
-msgstr "Fail:"
+msgstr ""
 
 #: includes/CMB2_JS.php:86 includes/CMB2_JS.php:119
 msgid "Clear"
-msgstr "Kosongkan"
+msgstr "ရှင်းပါ"
 
 #: includes/CMB2_JS.php:87
 msgid "Default"
-msgstr "Lalai"
+msgstr "မူလ သတ်မှတ်ချက်"
 
 #: includes/CMB2_JS.php:88
 msgid "Select Color"
-msgstr "Pilih Warna"
+msgstr "အရောင် ရွေး"
 
 #: includes/CMB2_JS.php:89
 msgid "Current Color"
-msgstr "Warna Semasa"
+msgstr "လက်ရှိ အရောင်"
 
 #: includes/CMB2_JS.php:110
 msgid "Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday"
@@ -390,75 +389,75 @@ msgstr ""
 
 #: includes/CMB2_JS.php:115
 msgid "Next"
-msgstr "Seterusnya"
+msgstr "ဆက်လုပ်"
 
 #: includes/CMB2_JS.php:116
 msgid "Prev"
-msgstr "Sebelum"
+msgstr "အရင်"
 
 #: includes/CMB2_JS.php:117
 msgid "Today"
-msgstr "Hari ini"
+msgstr "ယနေ့"
 
 #: includes/CMB2_JS.php:118 includes/CMB2_JS.php:128
 msgid "Done"
-msgstr "Selesai"
+msgstr "ြပီးပါြပီ"
 
 #: includes/CMB2_JS.php:122
 msgid "Choose Time"
-msgstr "Pilih Masa"
+msgstr ""
 
 #: includes/CMB2_JS.php:123
 msgid "Time"
-msgstr "Masa"
+msgstr ""
 
 #: includes/CMB2_JS.php:124
 msgid "Hour"
-msgstr "Jam"
+msgstr "နာရီ"
 
 #: includes/CMB2_JS.php:125
 msgid "Minute"
-msgstr "Minit"
+msgstr "မိနစ်"
 
 #: includes/CMB2_JS.php:126
 msgid "Second"
-msgstr "Saat"
+msgstr ""
 
 #: includes/CMB2_JS.php:127
 msgid "Now"
-msgstr "Sekarang"
+msgstr ""
 
 #: includes/CMB2_JS.php:135
 msgid "Use this file"
-msgstr "Guna fail ini"
+msgstr ""
 
 #: includes/CMB2_JS.php:136
 msgid "Use these files"
-msgstr "Guna fail-fail ini"
+msgstr ""
 
 #: includes/CMB2_JS.php:137 includes/types/CMB2_Type_File_Base.php:61
 msgid "Remove Image"
-msgstr "Buang Imej"
+msgstr "ရုပ်ပံုကို ဖယ်ထုတ်ရန်"
 
 #: includes/CMB2_JS.php:138 includes/CMB2_Types.php:257
 #: includes/types/CMB2_Type_File_Base.php:80 tests/test-cmb-types-base.php:143
 #: tests/test-cmb-types.php:47 tests/test-cmb-types.php:55
 #: tests/test-cmb-types.php:701
 msgid "Remove"
-msgstr "Alih Keluar"
+msgstr "ဖယ်​ရှား​ပါ"
 
 #: includes/CMB2_JS.php:140 includes/types/CMB2_Type_File_Base.php:78
 #: tests/test-cmb-types-base.php:143 tests/test-cmb-types.php:701
 msgid "Download"
-msgstr "Muat turun"
+msgstr ""
 
 #: includes/CMB2_JS.php:141
 msgid "Select / Deselect All"
-msgstr "Pilih / Buang Pilihan Semua"
+msgstr ""
 
 #: includes/CMB2_Types.php:194
 msgid "Add Row"
-msgstr "Tambah Baris"
+msgstr ""
 
 #: includes/CMB2_hookup.php:145
 msgid ""
@@ -476,30 +475,30 @@ msgstr ""
 
 #: includes/helper-functions.php:279
 msgid "Save"
-msgstr "Simpan"
+msgstr "သိမ်းပါ"
 
 #: includes/types/CMB2_Type_File.php:36 tests/test-cmb-types.php:683
 #: tests/test-cmb-types.php:701
 msgid "Add or Upload File"
-msgstr "Tambah atau Muat Naik Fail"
+msgstr ""
 
 #: includes/types/CMB2_Type_File_List.php:36 tests/test-cmb-types.php:639
 #: tests/test-cmb-types.php:663
 msgid "Add or Upload Files"
-msgstr "Tambah atau Muat Naik Fail-fail"
+msgstr ""
 
 #: includes/types/CMB2_Type_Taxonomy_Multicheck.php:27
 #: includes/types/CMB2_Type_Taxonomy_Radio.php:25
 msgid "No terms"
-msgstr "Tiada butir"
+msgstr ""
 
 #. Plugin Name of the plugin/theme
 msgid "CMB2"
-msgstr "CMB2"
+msgstr ""
 
 #. Plugin URI of the plugin/theme
 msgid "https://github.com/CMB2/CMB2"
-msgstr "https://github.com/CMB2/CMB2"
+msgstr ""
 
 #. Description of the plugin/theme
 msgid ""
@@ -509,20 +508,20 @@ msgstr ""
 
 #. Author of the plugin/theme
 msgid "WebDevStudios"
-msgstr "WebDevStudios"
+msgstr ""
 
 #. Author URI of the plugin/theme
 msgid "http://webdevstudios.com"
-msgstr "http://webdevstudios.com"
+msgstr ""
 
 #: includes/CMB2_JS.php:109
 msgctxt "Valid formatDate string for jquery-ui datepicker"
 msgid "mm/dd/yy"
-msgstr "mm/dd/yy"
+msgstr ""
 
 #: includes/CMB2_JS.php:129
 msgctxt ""
 "Valid formatting string, as per "
 "http://trentrichardson.com/examples/timepicker/"
 msgid "hh:mm TT"
-msgstr "hh:mm TT"
+msgstr ""
