@@ -141,14 +141,17 @@ function slide_metabox() {
 		'type'    => 'textarea',
 	));
 	$cmb->add_field( array(
-		'name'    => __( ' Position', 'tinb' ),
-	    'id'      => $prefix . 'buttonset',
+		'name'    => __( 'Tipo de encabezado', 'tnb' ),
+	    'id'      => $prefix . 'title_type',
 	    'type'    => 'buttonset',
 	    'options' => array(
-            "" => __("Default", 'tnb'),
-            "left" => __("Left", 'tnb'),
-            "center" => __("Center", 'tnb'),
-            "right" => __("Right", 'tnb')
+            "h1" => __("h1", 'tnb'),
+            "h2" => __("h2", 'tnb'),
+            "h3" => __("h3", 'tnb'),
+            "h4" => __("h4", 'tnb'),
+            "h5" => __("h5", 'tnb'),
+            "h6" => __("h6", 'tnb'),
+            "p" => __("p", 'tnb')
 	    ),
 	    'default' => 'none'
     ));
@@ -159,6 +162,21 @@ function slide_metabox() {
 		'attributes' => array('cols'=>250, 'rows'=>5,'style'=>'width:100%'),
 		'type'    => 'textarea',
 	));
+    $cmb->add_field( array(
+		'name'    => __( 'Tipo de leyenda', 'tnb' ),
+	    'id'      => $prefix . 'legend_type',
+	    'type'    => 'buttonset',
+	    'options' => array(
+            "h1" => __("h1", 'tnb'),
+            "h2" => __("h2", 'tnb'),
+            "h3" => __("h3", 'tnb'),
+            "h4" => __("h4", 'tnb'),
+            "h5" => __("h5", 'tnb'),
+            "h6" => __("h6", 'tnb'),
+            "p" => __("p", 'tnb')
+	    ),
+	    'default' => 'none'
+    ));
 	$cmb->add_field( array(
 		'name'    => __( 'Botón #1', 'tnb' ),
 		//'desc'    => __( 'Texto secundario', 'tnb' ),
