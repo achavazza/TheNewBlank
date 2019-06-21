@@ -14,7 +14,7 @@ License: GPLv2+
  * Class PW_CMB2_Field_Google_Maps
  */
 
-define( 'PW_MAP_URL', get_template_directory_uri().'/inc/cmb2/plugins/cmb_field_map/');
+define( 'CMB2_FIELDMAP_URL', get_template_directory_uri().'/inc/cmb2-plugins/CMB2_field_map/');
 class PW_CMB2_Field_Google_Maps {
 
 	/**
@@ -74,7 +74,7 @@ class PW_CMB2_Field_Google_Maps {
 	 * Optionally save the latitude/longitude values into two custom fields
 	 */
 	public function sanitize_pw_map( $override_value, $value, $object_id, $field_args ) {
-		
+
 		if ( ! empty( $value['address'] ) ) {
 			update_post_meta( $object_id, $field_args['id'] . '_address', $value['address'] );
 		}
@@ -101,8 +101,8 @@ class PW_CMB2_Field_Google_Maps {
 		//wp_enqueue_script( 'pw_gallery_init', PW_GALLERY_URL . '/js/script.js', array( 'jquery' ), null );
 		//wp_enqueue_style ( 'pw_gallery_init', PW_GALLERY_URL . '/css/style.css');
 
-		wp_enqueue_script( 'pw-google-maps', PW_MAP_URL . 'js/script.js'  , array( 'pw-google-maps-api' ), self::VERSION );
-		wp_enqueue_style( 'pw-google-maps',  PW_MAP_URL . 'css/style.css' , array(), self::VERSION );
+		wp_enqueue_script( 'pw-google-maps', CMB2_FIELDMAP_URL . 'js/script.js'  , array( 'pw-google-maps-api' ), self::VERSION );
+		wp_enqueue_style( 'pw-google-maps',  CMB2_FIELDMAP_URL . 'css/style.css' , array(), self::VERSION );
 	}
 }
 $pw_cmb2_field_google_maps = new PW_CMB2_Field_Google_Maps();

@@ -34,7 +34,8 @@ function slide_init() {
         'hierarchical'       => false,
         'menu_position'      => 3,
         'menu_icon'          => 'dashicons-images-alt2',
-        'supports'           => array('title', 'thumbnail'),
+        'supports'           => array('title', 'editor', 'thumbnail'),
+        //'show_in_rest'       => true,
         'taxonomies'         => array('slider'),
     );
     register_post_type('slide', $args);
@@ -133,6 +134,7 @@ function slide_metabox() {
 		'type' => 'file',
 	) );
     */
+    /*
 	$cmb->add_field( array(
 		'name'    => __( 'Encabezado', 'tnb' ),
 		'desc'    => __( 'Texto primario', 'tnb' ),
@@ -179,28 +181,15 @@ function slide_metabox() {
     ));
 	$cmb->add_field( array(
 		'name'    => __( 'Botón #1', 'tnb' ),
-		//'desc'    => __( 'Texto secundario', 'tnb' ),
 		'id'      => $prefix . 'button-1',
-		//'attributes' => array('cols'=>120, 'rows'=>5),
-        /*
-        'attributes' => [
-            'disabled' => true,
-            'data-codeeditor' => json_encode( [
-                'codemirror' => [
-                    //'readOnly' => 'nocursor',
-                ],
-            ] ),
-        ],
-        */
 		'type'    => 'textarea_code',
 	));
 	$cmb->add_field( array(
 		'name'    => __( 'Botón #2', 'tnb' ),
-		//'desc'    => __( 'Texto secundario', 'tnb' ),
 		'id'      => $prefix . 'button-2',
-		'attributes' => array('cols'=>120, 'rows'=>5),
 		'type'    => 'textarea_code',
 	));
+    */
 
     //if(!is_admin()){ return; }
     /*
@@ -248,7 +237,7 @@ function slider_taxonomy_metabox() {
     $f2 = $cmb_term->add_field( array(
 		'name'    => __( 'Alto', 'tnb' ),
 		'desc'    => __( 'Alto del slider', 'tnb' ),
-		'default' => __( '400', 'tnb' ),
+		'default' => __( '400px', 'tnb' ),
 		'id'      => $prefix . 'h',
 		'type'    => 'text',
 	) );

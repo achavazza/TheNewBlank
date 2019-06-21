@@ -105,6 +105,9 @@
         //ButtonSet
         require_once (CMB_PLUGINS . '/CMB2-Buttonset-Field-master/buttonset_metafield.php');
 
+        //require_once (CMB_PLUGINS . '/CMB2-term-select/cmb2-term-select.php');
+        require_once (CMB_PLUGINS . '/CMB2-field-ajax-search/cmb2-field-ajax-search.php');
+
 
 
         //metaboxes list
@@ -114,6 +117,8 @@
     }
 
     include('inc/post-types/slides.php');
+    include('inc/custom-metaboxes/extra.php');
+
 
     /*
      * Widgets

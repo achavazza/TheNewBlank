@@ -1,6 +1,6 @@
 <?php
 /*
-_Template Name: Home
+Template Name: Sidebar
 */
 get_header(); ?>
 <div class="grid">

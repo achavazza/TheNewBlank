@@ -1,6 +1,6 @@
-<?php 
+<?php
 /*
-Template Name: Contacto
+_Template Name: Contacto
 */
 get_header(); ?>
 <div class="grid">

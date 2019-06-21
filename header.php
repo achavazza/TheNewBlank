@@ -45,8 +45,8 @@
 
 <body <?php body_class(); ?>>
 
-	<div id="page-wrap" class="grid">
-		<div id="header">
+	<div id="page-wrap">
+		<div id="header" class="grid">
 			<h1><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></h1>
 			<div class="description"><?php bloginfo('description'); ?></div>
 
